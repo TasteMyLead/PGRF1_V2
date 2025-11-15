@@ -32,7 +32,6 @@ public class ClipEdge extends Clipper {
     private Line clipLine(Line line, Edge clippingEdge) {
 
         Point intersection = clippingEdge.getIntersectionLine(line);
-        System.out.println("intersection: " + intersection);
         if (intersection == null) return line;
         else return new Line(line.getX1(), line.getY1(), intersection.getX(),intersection.getY(), line.getColor());
     };
