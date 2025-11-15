@@ -89,8 +89,6 @@ public class ScanLineRasterizer {
             if (i == polygonModel.getSize() -1) indexB = 0;
             else indexB = i + 1;
 
-            System.out.println(i + " Bod: indexA: " + indexA + " indexB: " + indexB);
-
             Point a = polygonModel.getPoint(indexA);
             Point b = polygonModel.getPoint(indexB);
 
